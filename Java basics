@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Person {
+	
+	String name;
+	
+	public Person(String name){
+		this.name = name;
+	}
+	
+	public int age(int age){
+		int currentage = age;
+		System.out.println("Ray is " + currentage);
+		return currentage;
+	}
+	
+	public static void main(String[] args) {
+
+		Person ray = new Person("ray");
+		ray.age(19);
+		
+		ArrayList<String> Codes = new ArrayList<String>();
+		Codes.add("SQL");
+		Codes.add("Python");
+		Codes.add("Java");
+		System.out.println("Codes ray Knows are:");
+		for(String code : Codes){
+			System.out.println(code);
+		}
+		
+		
+	}
+}
